@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="parent" v-click-outside="clickedParent">
-      parent
-      <div class="child" v-click-outside="clickedChild">child</div>
+      Parent
+      <div class="child" v-click-outside="clickedChild">Child</div>
     </div>
     <div>Clicked outside element: {{ clickedOutsideElement }}</div>
   </div>
@@ -18,6 +18,9 @@ const clickedParent = async () => {
 };
 </script>
 <style>
+body {
+  font-size: 2rem;
+}
 .parent {
   padding: 3rem;
   background: #888;
